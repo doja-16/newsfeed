@@ -1,0 +1,47 @@
+/* Updated .content to ensure it takes full width */
+.content {
+    margin-left: 250px; /* Same as the width of the sidebar */
+    padding: 20px;
+    flex-grow: 1;
+    height: 100vh; /* Take full viewport height */
+}
+
+/* Adjusted .chart-container to align items properly */
+.chart-container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; /* Changed to flex-start to align chart to top */
+    align-items: center; 
+    width: 100%;
+}
+
+/* Add margin to move the chart down */
+.chart-container {
+    margin-top: 20px; /* Moves the chart down */
+}
+
+/* Adjusted table styling */
+.recent-uploads table {
+    width: 100%; /* Reduced to 90% to avoid any overflow */
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.recent-uploads th, .recent-uploads td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.recent-uploads th {
+    background-color: #f8f8f8;
+}
+
+.recent-uploads tr:hover {
+    background-color: #f1f1f1;
+}
+
+.icon {
+    margin-right: 10px;
+    cursor: pointer;
+}

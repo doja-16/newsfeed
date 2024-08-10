@@ -1,0 +1,233 @@
+header {
+  /* width: 100%; */
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  color: #fff;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+.head{
+  background-color: #000;
+
+}
+.navbar-container {
+  background-color: #000;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.logo {
+  height: 60px;
+  margin: 0;
+  width: 140px;
+  margin-left: -50px;
+}
+
+.main-nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-left: -50px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin: 0 18px;
+  position: relative;
+  font-size: 18px;
+  
+}
+
+.menu li::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ebe0e0;
+  transition: width 0.3s;
+}
+
+.menu li:hover::after {
+  width: 100%;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #f3f0f0;
+  font-weight: bold;
+}
+
+.barIcon {
+  display: none;
+  font-size: 25px;
+  background: none;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+}
+
+.actions button {
+  margin: 0 10px;
+  padding: 5px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.subscribe {
+  font-size: 15px;
+  background: #900;
+  color: #fff;
+}
+
+.login {
+  font-size: 15px;
+  background: #fff;
+  color: #900;
+  border: 1px solid #900;
+}
+/* Styles for the user dropdown and logout button */
+.user-dropdown {
+  position: relative; /* Position relative for absolute positioning of dropdown menu */
+  display: inline-block;
+}
+
+.user-name {
+  cursor: pointer;
+  color: #e4e7ea;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px;
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.user-name:hover {
+  color: #ee2c1b; /* Change color on hover */
+}
+
+.dropdown-menu {
+  display: block; /* Ensure the dropdown is shown */
+  position: absolute;
+  top: 100%; /* Position below the user name */
+  right: 0; /* Align to the right */
+  background-color: #fff; /* White background */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 10px px; /* Space for items */
+  z-index: 1000;
+  width: 140px; /* Ensure dropdown is above other elements */
+}
+
+.dropdown-item {
+  display: block;
+  /* width: 130%; */
+  padding: 30px 30px;
+  background-color: #fff; /* White background */
+  color:black; /* Text color */
+  text-align: left;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.dropdown-item:hover {
+  /* background-color: #f0f0f0;  */
+ 
+  color: #ad261a; /* Blue text color on hover */
+}
+
+.dropdown-item:focus {
+  outline: none; /* Remove default focus outline */
+  background-color: #e6e6e6; /* Slightly darker background for focus */
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 500px) {
+  .user-name {
+      font-size: 14px; /* Adjust font size for smaller screens */
+      padding: 8px;
+  }
+
+  .dropdown-item {
+      font-size: 14px; /* Adjust font size for dropdown items */
+      padding: 8px 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .barIcon {
+    display: block;
+  }
+
+  .submenu {
+    display: none;
+    flex-direction: column;
+  }
+
+  .submenu.open {
+    display: flex;
+  }
+}
+
+.user-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.user-name {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.user-name .fa-user-circle {
+  margin-right: 8px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-item {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+/* .dropdown-item:hover {
+  background-color: #f1f1f1;
+} */
+.user-dropdown .profile-icon {
+  font-size: 24px;
+  margin-right: 4px;
+  cursor: pointer;
+}
+

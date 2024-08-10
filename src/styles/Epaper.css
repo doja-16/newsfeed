@@ -1,0 +1,37 @@
+/* Epaper.css */
+body {
+    background-color: white;
+    color: #333;
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header, footer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+article {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 10px;
+    flex-basis: 30%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+.text1{
+    color: #333;
+}

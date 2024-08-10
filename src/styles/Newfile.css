@@ -1,0 +1,38 @@
+/* src/App.css */
+.news-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .left-column, .right-column {
+    width: 49%; 
+  }
+  
+  .article {
+    background: #ffffff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .article h2 {
+    color: #333;
+    font-size: 18px;
+    margin: 0 0 5px 0;
+  }
+  
+  .date {
+    color: #555;
+    font-size: 16px;
+  }
+  
+  @media (max-width: 768px) {
+    .news-container {
+      flex-direction: column;
+    }
+    .left-column, .right-column {
+      width: 100%;
+    }
+  }
+  

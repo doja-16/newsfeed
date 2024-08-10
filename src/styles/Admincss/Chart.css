@@ -1,0 +1,31 @@
+/* .app {
+    display: flex;
+} */
+ .activity{
+   margin-top: 15px;
+ }
+
+.content {
+    margin-left: 250px; 
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 60vh; 
+    /* width: 100%; */
+    margin-top: -700px;
+}
+
+
+.chart-container {
+    /* margin-bottom: 200px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    /* height: 100%; */
+    flex-direction: column; 
+}
+
+

@@ -1,0 +1,46 @@
+.trending-news-container {
+    padding: 20px;
+    max-width: 1200px;
+   margin-top: -150px;
+
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+  }
+  
+  .news-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .news-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .news-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .news-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .news-card p {
+    font-size: 1em;
+    margin-bottom: 15px;
+  }
+  
+  .news-card span {
+    font-size: 0.9em;
+    color: #888;
+  }
+  
