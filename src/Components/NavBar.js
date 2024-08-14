@@ -80,7 +80,7 @@ const Navbar = () => {
             </div>
           ) : (
             <>
-              <button className='subscribe' onClick={() => openModal('register')}>SIGN IN</button>
+              <button className='subscribe' onClick={() => openModal('register')}>SIGN UP</button>
               <button className='login' onClick={() => openModal('login')}>LOGIN</button>
             </>
           )}

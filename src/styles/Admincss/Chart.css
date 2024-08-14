@@ -1,9 +1,9 @@
 /* .app {
     display: flex;
 } */
- .activity{
-   margin-top: 15px;
- }
+ /* .activity{
+   margin-top: 1500px;
+ } */
 
 .content {
     margin-left: 250px; 
@@ -12,9 +12,9 @@
     display: flex;
     justify-content: center; 
     align-items: center; 
-    height: 60vh; 
+    /* height: 60vh;  */
     /* width: 100%; */
-    margin-top: -700px;
+    margin-top: 50px;
 }
 
 
@@ -26,6 +26,7 @@
     /* width: 100%; */
     /* height: 100%; */
     flex-direction: column; 
+   
 }
 
 

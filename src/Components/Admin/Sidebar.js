@@ -1,10 +1,20 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import '../../styles/Admincss/Sidebar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChartLine, faFire, faPlus, faFileAlt, faTasks } from '@fortawesome/free-solid-svg-icons';
+import { faChartLine, faFire, faPlus, faFileAlt, faTasks, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 
 const Sidebar = () => {
+    const navigate = useNavigate();
+
+    const handleLogout = () => {
+        // Clear user session or token
+        // Example: localStorage.removeItem('userToken');
+
+        // Redirect to login page or home page
+        navigate('/');
+    };
+
     return (
         <div className="sidebar">
             <ul className="sidebar-menu">
@@ -37,6 +47,12 @@ const Sidebar = () => {
                         <FontAwesomeIcon icon={faTasks} className="icon" />
                         Manage Content
                     </NavLink>
+                </li>
+                <li className="sidebar-item">
+                    <button className="logout-btn" onClick={handleLogout}>
+                        <FontAwesomeIcon icon={faSignOutAlt} className="icon" />
+                        Logout
+                    </button>
                 </li>
             </ul>
         </div>

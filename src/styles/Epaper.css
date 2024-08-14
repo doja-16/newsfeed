@@ -6,32 +6,88 @@ body {
     margin: 0;
     padding: 20px;
     box-sizing: border-box;
+    padding: 0 0  ;
 }
 
 header, footer {
     text-align: center;
     margin-bottom: 20px;
 }
-
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
-}
+  
+  main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+  }
 
 article {
     background: white;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     margin: 10px;
-    flex-basis: 30%;
+    /* height: 400px; */
+    flex-basis: 25%;
 }
 
 img {
     width: 100%;
     height: auto;
+    margin: 0 0 0;
 }
 .text1{
     color: #333;
 }
+.like-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: transparent;
+    color: #e63946;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .like-button:hover {
+    color: #d62828;
+  }
+  
+  .like-button .fa-heart {
+    margin-right: 5px;
+  }
+  /* Styles for the comment popup */
+.popup-overlay11 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .popup-content11 {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .close-button11 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  

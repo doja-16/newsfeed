@@ -1,7 +1,6 @@
 .add-news {
-    margin-left: -500px; /* Make space for the sidebar */
+    margin-top: 300px;
     padding: 20px;
-    margin-bottom: -100px;
   }
   
   .add-news h2 {

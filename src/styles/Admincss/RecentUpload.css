@@ -1,10 +1,5 @@
 /* Updated .content to ensure it takes full width */
-.content {
-    margin-left: 250px; /* Same as the width of the sidebar */
-    padding: 20px;
-    flex-grow: 1;
-    height: 100vh; /* Take full viewport height */
-}
+
 
 /* Adjusted .chart-container to align items properly */
 .chart-container {

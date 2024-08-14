@@ -55,15 +55,7 @@ const Login = ({ switchToRegister, onLoginSuccess }) => {
     }
   };
 
-  const handleGoogleLogin = () => {
-    // Redirect to Google account creation or authentication
-    window.location.href = '/auth/google'; // Replace with your Google OAuth URL
-  };
-
-  const handleAppleLogin = () => {
-    // Redirect to Apple account creation or authentication
-    window.location.href = '/auth/apple'; // Replace with your Apple OAuth URL
-  };
+  
 
   return (
     <div className="login-container">

@@ -1,0 +1,40 @@
+/* src/Case.css */
+.case-container {
+    padding: 20px;
+  }
+  
+  .case-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .case-item {
+    /* border: 1px solid #ddd; */
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    
+    /* width: 100%; */
+  }
+  
+  .case-item img {
+    width: 70%;
+    height: 60%;
+    object-fit: cover;
+  }
+  
+  .case-item h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    width: 80%;
+    margin-left: 50px;
+
+  }
+  
+  .case-item p {
+    font-size: 1rem;
+    padding: 0 10px;
+    color: #666;
+  }
+  

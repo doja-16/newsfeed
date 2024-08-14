@@ -27,7 +27,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/sports" element={<Sports />} />
-        <Route path="/culture" element={<Culture />} />
+        <Route path="/culture" element={<Culture />} /> 
         <Route path="/memes" element={<Meme />} />
         <Route path="/politics" element={<Politics />} />
         <Route path="/Entertainment" element={<Entertainment/>} />

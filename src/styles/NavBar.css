@@ -10,7 +10,9 @@ header {
   padding: 10px 0;
 }
 .head{
-  background-color: #000;
+  /* background-color: #000; */
+  margin-bottom: 70px;
+
 
 }
 .navbar-container {
@@ -22,6 +24,7 @@ header {
   align-items: center;
   padding: 0 20px;
   box-sizing: border-box;
+  position: fixed;
 }
 
 .logo {

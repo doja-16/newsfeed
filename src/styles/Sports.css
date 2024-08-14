@@ -18,8 +18,10 @@
     .news-section {
       
     display: flex;
-    padding: 10px; /* Reduced padding from 20px to 10px */
+    padding: 10px; 
     border-bottom: 1px solid #ccc;
+   
+    width: 1200px;
   }
   
   .news-section article {

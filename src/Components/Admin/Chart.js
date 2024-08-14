@@ -1,7 +1,7 @@
 // Import necessary components from recharts
 import React from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
-import '../../styles/Admincss/Chart.css'; // Ensure the path is correct
+import '../../styles/Admincss/Chart.css'; 
 import RecentUpload from './RecentUpload';
 
 // Sample data for the chart

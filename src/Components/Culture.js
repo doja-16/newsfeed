@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import '../styles/Sports.css'
+import Shorts from './Shorts';
+import TopStory1 from './TopStory1';
 
 const Culture= () => {
     const [articles, setArticles] = useState([]);
@@ -40,6 +42,8 @@ const Culture= () => {
 
     return (
         <div className='container'>
+            <TopStory1/>
+            <Shorts/>
             {articles.length > 0 ? (
                 articles.map((article, index) => (
                     <section className="news-section" key={index}>
@@ -57,6 +61,7 @@ const Culture= () => {
             ) : (
                 <p>Loading....</p>
             )}
+            
         </div>
     );
 };
